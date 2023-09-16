@@ -1,90 +1,90 @@
-// print hello world to the conole
-//console.log("hello world");
+//print hello world to the conole
+console.log("hello world");
 
-//==========================================
+//================================================
+//reverse string
+function reverse(str) {
+  let rvd = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    rvd += str[i];
+  }
+  return rvd;
+}
 
-// function reverse(str) {
-//   let rvd = '';
-//   for (let i = str.length - 1; i >= 0; i--) {
-//     rvd += str[i];
-//   }
-//   return rvd;
-// }
 
-
-// // Example usage:
-// const originalString = "Ali hamed from Sohag";
-// const reversedString = reverse(originalString);
-// console.log(reversedString);
+// Example usage:
+const originalString = "Ali hamed from Sohag";
+const reversedString = reverse(originalString);
+console.log(reversedString);
 
 //======================================================
-
-// function evenOdd(num){
+//odd or even
+function evenOdd(num){
     
-//     if (num %2 == 0)
-//     console.log("even")
-//     else 
-//     console.log("odd")
+    if (num %2 == 0)
+    console.log("even")
+    else 
+    console.log("odd")
     
-// }
-// evenOdd(5)
+}
+evenOdd(5)
     
 //========================================================
-
-// function MinMax() {
-//     let Arr = [33,44,113,50,21,56, 60, 202,31, 10, 40,12];
+//find min and max 
+function MinMax() {
+    let Arr = [33,44,113,50,21,56, 60, 202,31, 10, 40,12];
  
-//     let minValue = Math.min(...Arr);
-//     let maxValue = Math.max(...Arr);
+    let minValue = Math.min(...Arr);
+    let maxValue = Math.max(...Arr);
      
-//     console.log("Minimum : " + minValue);
-//     console.log("Maximum : " + maxValue);
-// }
+    console.log("Minimum : " + minValue);
+    console.log("Maximum : " + maxValue);
+}
  
-// MinMax()
+MinMax()
 //==================================================
-
-// Function to perform addition
-// function add(a, b) {
-//     return a + b;
-//   }
+//simple calculator
+Function to perform addition
+function add(a, b) {
+    return a + b;
+  }
   
-//   // Function to perform subtraction
-//   function subtract(a, b) {
-//     return a - b;
-//   }
+  // Function to perform subtraction
+  function subtract(a, b) {
+    return a - b;
+  }
   
-//   // Function to perform multiplication
-//   function multiply(a, b) {
-//     return a * b;
-//   }
+  // Function to perform multiplication
+  function multiply(a, b) {
+    return a * b;
+  }
   
-//   // Function to perform division
-//   function divide(a, b) {
-//     if (b === 0) {
-//       return "Cannot divide by zero";
-//     }
-//     return a / b;
-//   }
+  // Function to perform division
+  function divide(a, b) {
+    if (b === 0) {
+      return "Cannot divide by zero";
+    }
+    return a / b;
+  }
   
-//   // Get user input
-//   const num1 = parseFloat(prompt("Enter the first number:"));
-//   const num2 = parseFloat(prompt("Enter the second number:"));
+  // Get user input
+  const num1 = parseFloat(prompt("Enter the first number:"));
+  const num2 = parseFloat(prompt("Enter the second number:"));
   
-//   // Perform calculations
-//   const additionResult = add(num1, num2);
-//   const subtractionResult = subtract(num1, num2);
-//   const multiplicationResult = multiply(num1, num2);
-//   const divisionResult = divide(num1, num2);
+  // Perform calculations
+  const additionResult = add(num1, num2);
+  const subtractionResult = subtract(num1, num2);
+  const multiplicationResult = multiply(num1, num2);
+  const divisionResult = divide(num1, num2);
   
-//   // Display results
-//   console.log(`Addition: ${additionResult}`);
-//   console.log(`Subtraction: ${subtractionResult}`);
-//   console.log(`Multiplication: ${multiplicationResult}`);
-//   console.log(`Division: ${divisionResult}`);
+  // Display results
+  console.log(`Addition: ${additionResult}`);
+  console.log(`Subtraction: ${subtractionResult}`);
+  console.log(`Multiplication: ${multiplicationResult}`);
+  console.log(`Division: ${divisionResult}`);
   
-  //==========================================================
-
+//==========================================================
+// deepclone
   function deepClone(obj) {
     if (obj === null || typeof obj !== 'object') {
       return obj; // Return primitive values and functions as is
@@ -134,8 +134,8 @@
 
   //===============================================
 
-  //=====================================
 
+//merge sort
   function mergeSort(arr) {
     if (arr.length <= 1) {
       return arr; // Base case: if the array has 0 or 1 elements, it's already sorted.
